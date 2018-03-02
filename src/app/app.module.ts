@@ -7,11 +7,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 import {GlobalModule} from './shared/global.module'
 import { environment } from '../environments/environment';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
     
   ],
   imports: [
