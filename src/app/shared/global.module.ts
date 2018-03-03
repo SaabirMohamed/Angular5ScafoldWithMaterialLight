@@ -11,7 +11,7 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../../environments/environment';
 import { FstoreService } from './fstore.service';
-
+import {SeoService} from './seo.service';
 
 @NgModule({
   declarations: [],
@@ -26,7 +26,7 @@ import { FstoreService } from './fstore.service';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule
   ],
-  providers: [FstoreService],
+  providers: [FstoreService, SeoService],
   exports: [AngularFontAwesomeModule,
             AlertModule,
             TabsModule,
