@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {GlobalModule} from './shared/global.module'
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
-import {GlobalModule} from './shared/global.module'
 import { environment } from '../environments/environment';
 import { NavComponent } from './nav/nav.component';
 
