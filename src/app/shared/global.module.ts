@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import {AlertModule} from 'ngx-bootstrap'
 import { TabsModule } from 'ngx-bootstrap/tabs'
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule  } from '@angular/forms';
+// import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormsModule  } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
@@ -16,12 +16,13 @@ import {SeoService} from './seo.service';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    // CommonModule,
+    FormsModule,
     AngularFontAwesomeModule,
     AlertModule,
     TabsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.config, 'mahadeeni'),,
+    AngularFireModule.initializeApp(environment.config, 'mahadeeni'),
     AngularFirestoreModule,
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule
@@ -29,6 +30,7 @@ import {SeoService} from './seo.service';
   providers: [FstoreService, SeoService],
   exports: [AngularFontAwesomeModule,
             AlertModule,
+            FormsModule,
             TabsModule,
             ReactiveFormsModule,
             AngularFireModule,
