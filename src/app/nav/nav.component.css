@@ -1,0 +1,52 @@
+.logotop {
+    width: 50px;
+}
+.desktop {
+    box-shadow: 0px 1px 2px #666;
+    z-index: 200;
+    background-color: lime !important;
+    padding: 3px !important;
+    
+}
+.mobilenavOff {
+    
+    opacity: 0;
+    width: 0%;
+    height: 100vh;
+    padding-top: 0px !important;
+    transition: all .4s ease-in;
+    
+    
+    }
+
+.mobilenavOff ul {
+    opacity: 0;
+    transition: all .1s ease-in;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+}
+
+.mobilenavOn {
+    background-color: lime !important;
+    opacity: .9;
+    width: 60%;
+    height: 100vh;
+    padding-top: 0px !important;
+    transition: all .5s ease-in;
+    
+    box-shadow: 1px 0px 2px #000; 
+}
+
+.mobilenavOn ul {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    
+}
+
+.nav-item {
+    cursor: pointer;
+}
+

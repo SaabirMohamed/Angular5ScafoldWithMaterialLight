@@ -1,13 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
-import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import {AlertModule} from 'ngx-bootstrap'
+import { TabsModule } from 'ngx-bootstrap/tabs'
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+
 
 @NgModule({
   declarations: [],
-  imports: [BrowserModule, AngularFontAwesomeModule,NgbModule.forRoot()],
-  providers: [NgbCarouselConfig],
-  bootstrap: [],
-  exports: [AngularFontAwesomeModule, NgbModule]
+  imports: [AngularFontAwesomeModule, AlertModule, TabsModule],
+  providers: [],
+  exports: [AngularFontAwesomeModule, AlertModule, TabsModule]
 })
 export class GlobalModule {}
