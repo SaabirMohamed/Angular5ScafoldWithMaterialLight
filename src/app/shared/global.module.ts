@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [],
   imports: [BrowserModule, AngularFontAwesomeModule,NgbModule.forRoot()],
-  providers: [],
+  providers: [NgbCarouselConfig],
   bootstrap: [],
   exports: [AngularFontAwesomeModule, NgbModule]
 })
